@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/uikit.css" />
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="uk-section">
+                <div class="uk-container uk-container-expand">
+                    <h1>Title</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="uk-section">
+                <div class="uk-container uk-container-expand">
+                    <h1>Contactează-ne!</h1>
+                    <hr>
+                    <div class="uk-panel">
+                        <div class="uk-flex uk-flex-center">
+                            <form action="contact.php" method="post" class="uk-form-stacked uk-width-1-2">
+                                <div class="uk-margin">
+                                    <label for="nume" class="uk-form-label">Nume:</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="text" name="nume" id="nume" required>
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label for="email" class="uk-form-label">Email:</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="email" name="email" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label for="mesaj" class="uk-form-label">Mesaj:</label>
+                                    <div class="uk-form-controls">
+                                        <textarea class="uk-textarea" name="mesaj" id="mesaj" required></textarea>
+                                    </div>
+                                </div>
+                                <input class="uk-button uk-button-primary" type="submit" value="Ia legătura cu noi">
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="uk-section">
+                <div class="uk-section">
+                    <div class="uk-container uk-container-expand">
+                        <p>Copyright &copy; 2024</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
