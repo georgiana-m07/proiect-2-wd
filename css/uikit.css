@@ -2,14 +2,19 @@
 /* ========================================================================
    Component: Base
  ========================================================================== */
-/*
+
+
+/*Import Google Fonts*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+ /*
  * 1. Set `font-size` to support `rem` units
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  * 3. Style
  */
 html {
   /* 1 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
@@ -222,7 +227,7 @@ h6,
 .uk-heading-2xlarge,
 .uk-heading-3xlarge {
   margin: 0 0 20px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Montserrat', "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   color: #333;
   text-transform: none;
@@ -5534,7 +5539,8 @@ ul.uk-nav-sub {
   min-height: 80px;
   /* 4 */
   font-size: 0.875rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-family: 'Montserrat', "Helvetica Neue", Arial, sans-serif;
   /* 5 */
   text-decoration: none;
 }
