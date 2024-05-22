@@ -10,83 +10,36 @@
 </head>
 
 <body>
-    <header class="tm-header uk-visible@m">
-        <div media="@m" animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container" class="uk-sticky">
+    <header class="uk-visible@m">
+        <div media="@m" animation="uk-animation-slide-top"  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <div class="uk-navbar-container">
-                <div class="uk-container">
+                <div class="uk-container" >
                     <nav class="uk-navbar"
                         uk-navbar='{"align":"left","container":".tm-header > [uk-sticky]","boundary":".tm-header .uk-navbar-container"}'>
                         <div class="uk-navbar-left">
-                            <a href="http://localhost/proiect-1-wd/index.php" aria-label="Back to home" class="uk-logo uk-navbar-item">
-                                <img alt="Timi Cafe" loading="eager" src="img/logo-no-background.png" width="80" height="41" />
+                            <a href="index.html" aria-label="Acasă" class="uk-logo uk-navbar-item">
+                                <img alt="Timi Cafe" loading="eager" src="img/logo-no-background.png"/>
                             </a>
                         </div>
 
                         <div class="uk-navbar-center">
                             <ul class="uk-navbar-nav">
-                                <li class="item-101 uk-active">
-                                    <a href="index.html"> Acasă</a>
+                                <li class="nav-item-1 uk-active">
+                                    <a href="index.html">Acasă</a>
                                 </li>
-                                <li class="item-103">
-                                    <a href="despre-noi.html"> Despre</a>
+                                <li class="nav-item-2">
+                                    <a href="despre-noi.html">Despre</a>
                                 </li>
-                                <li class="item-102">
-                                    <a href="">
-                                        Produse și servicii</a>
+                                <li class="nav-item-3">
+                                    <a href="produse-si-servicii.html">Produse și servicii</a>
                                 </li>
-                                <li class="item-120">
-                                    <a href="/proiect-1-wd/index.php/retete"> Rețete</a>
+                                <li class="nav-item-4">
+                                    <a href="retete.htm">Rețete</a>
                                 </li>
-                                <li class="item-110">
-                                    <a href="/proiect-1-wd/index.php/contact"> Contact</a>
+                                <li class="nav-item-5">
+                                    <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
-                        </div>
-
-                        <div class="uk-navbar-right">
-                            <a class="uk-navbar-toggle uk-icon uk-search-icon" id="module-tm-3"
-                                href="#search-tm-3-modal" uk-search-icon="" uk-toggle="" aria-label="Open Search"
-                                role="button">
-                                <svg width="20" height="20" viewBox="0 0 20 20">
-                                    <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle>
-                                    <path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z">
-                                    </path>
-                                </svg>
-                            </a>
-
-                            <div id="search-tm-3-modal" class="uk-modal-full uk-modal" uk-modal="container: true">
-                                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport=""
-                                    role="dialog" aria-modal="true">
-                                    <button class="uk-modal-close-full uk-close-large uk-icon uk-close" type="button"
-                                        uk-close=""
-                                        uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s"
-                                        aria-label="Close">
-                                        <svg width="24" height="24" viewBox="0 0 24 24">
-                                            <polygon fill="#000"
-                                                points="24,1.4 22.6,0 12,10.6 1.4,0 0,1.4 10.6,12 0,22.6 1.4,24 12,13.4 22.6,24 24,22.6 13.4,12">
-                                            </polygon>
-                                        </svg>
-                                    </button>
-                                    <div class="uk-search uk-search-large">
-                                        <form id="search-tm-3"
-                                            action="/proiect-1-wd/index.php/component/finder/search?Itemid=101"
-                                            method="get" role="search"
-                                            class="uk-search js-finder-searchform uk-search-large">
-                                            <div class="awesomplete">
-                                                <input name="q"
-                                                    class="js-finder-search-query uk-search-input uk-text-center"
-                                                    placeholder="Search" required="" aria-label="Search" type="search"
-                                                    autofocus="" autocomplete="off" aria-expanded="false"
-                                                    aria-owns="awesomplete_list_1" role="combobox" />
-                                                <ul hidden="" role="listbox" id="awesomplete_list_1"></ul>
-                                                <span class="visually-hidden" role="status" aria-live="assertive"
-                                                    aria-atomic="true">Type 2 or more characters for results.</span>
-                                            </div>
-                                            <input type="hidden" name="Itemid" value="101" />
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </nav>
                 </div>
@@ -94,88 +47,52 @@
         </div>
     </header>
 
-    <header class="tm-header-mobile uk-hidden@m">
-        <div class="uk-navbar-container">
+    <header class="uk-hidden@m">
+        <div class="uk-navbar-container" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <div class="uk-container uk-container-expand">
-                <nav class="uk-navbar"
-                    uk-navbar='{"align":"left","container":".tm-header-mobile","boundary":".tm-header-mobile .uk-navbar-container"}'>
+                <nav class="uk-navbar" uk-navbar>
                     <div class="uk-navbar-left">
-                        <a href="index.html" aria-label="Back to home" class="uk-logo uk-navbar-item">
-                            <img src="img/logo-no-background.png" alt="Timi Cafe" loading="eager" width="80" height="41" />
+                        <a href="index.html" class="uk-logo">
+                            <img src="img/logo-no-background.png" alt="Timi Cafe">
                         </a>
                     </div>
-
                     <div class="uk-navbar-right">
-                        <a uk-toggle="" href="#tm-dialog-mobile" class="uk-navbar-toggle" role="button"
-                            aria-label="Open menu">
-                            <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon">
-                                <svg width="20" height="20" viewBox="0 0 20 20">
-                                    <style>
-                                        .uk-navbar-toggle-icon svg&gt[class*="line-"] {
-                                            transition: 0.2s ease-in-out;
-                                            transition-property: transform, opacity;
-                                            transform-origin: center;
-                                            opacity: 1;
-                                        }
-
-                                        .uk-navbar-toggle-icon svg&gt.line-3 {
-                                            opacity: 0;
-                                        }
-
-                                        .uk-navbar-toggle-animate[aria-expanded="true"] svg&gt.line-3 {
-                                            opacity: 1;
-                                        }
-
-                                        .uk-navbar-toggle-animate[aria-expanded="true"] svg&gt.line-2 {
-                                            transform: rotate(45deg);
-                                        }
-
-                                        .uk-navbar-toggle-animate[aria-expanded="true"] svg&gt.line-3 {
-                                            transform: rotate(-45deg);
-                                        }
-
-                                        .uk-navbar-toggle-animate[aria-expanded="true"] svg&gt.line-1,
-                                        .uk-navbar-toggle-animate[aria-expanded="true"] svg&gt.line-4 {
-                                            opacity: 0;
-                                        }
-
-                                        .uk-navbar-toggle-animate[aria-expanded="true"] svg&gt.line-1 {
-                                            transform: translateY(6px) scaleX(0);
-                                        }
-
-                                        .uk-navbar-toggle-animate[aria-expanded="true"] svg&gt.line-4 {
-                                            transform: translateY(-6px) scaleX(0);
-                                        }
-                                    </style>
-                                    <rect width="20" height="2" y="3" class="line-1"></rect>
-                                    <rect width="20" height="2" y="9" class="line-2"></rect>
-                                    <rect width="20" height="2" y="9" class="line-3"></rect>
-                                    <rect width="20" height="2" y="15" class="line-4"></rect>
-                                </svg>
-                            </div>
-                        </a>
+                        <a uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle aria-label="Open menu"></a>
                     </div>
                 </nav>
             </div>
         </div>
+    
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="index.html">Acasă</a></li>
+                    <li><a href="despre-noi.html">Despre noi</a></li>
+                    <li><a href="produse-si-servicii.html">Produse și servicii</a></li>
+                    <li><a href="retete.html">Rețete</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>        
     </header>
+    
 
     <main>
         <div class="uk-section-default uk-section uk-padding-remove-vertical">
             <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-margin-remove-vertical">
                 <div class="uk-width-1-1">
-                    <div class="uk-slider-container uk-margin uk-text-center uk-slider" uk-slider="" role="region" aria-roledescription="carousel">
+                    <div class="uk-slider-container uk-margin uk-text-center uk-slider" role="region" aria-roledescription="carousel">
                         <div class="uk-position-relative">
                             <ul class="uk-slider-items uk-grid-match" aria-live="polite" role="presentation"
                                 style="transform: translate3d(0px, 0px, 0px)">
                                 <li role="tabpanel" aria-label="1 of 3" tabindex="-1" class="uk-slide-active uk-active"
                                     aria-hidden="false" id="uk-slider-1">
                                     <div class=" uk-light uk-cover-container">
-                                        <img src="img/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" width="5824" height="3259" alt="" loading="lazy" class="uk-invisible" />
-                                        <img src="img/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" width="5824" height="3259" alt="" loading="lazy" class="uk-transition-opaque" uk-cover="" />
+                                        <img src="img/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" width="5824" height="3259" loading="lazy" class="uk-invisible" />
+                                        <img src="img/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg" width="5824" height="3259" loading="lazy" class="uk-transition-opaque" />
 
-                                        <div class="uk-position-cover" style="background-color: rgba(0, 0, 0, 0.3)">
-                                        </div>
+                                        <div class="uk-position-cover" style="background-color: rgba(0, 0, 0, 0.3)"></div>
 
                                         <div class="uk-position-center">
                                             <div class="uk-panel uk-padding uk-margin-remove-first-child">
@@ -196,10 +113,9 @@
                                     id="uk-slider-2">
                                     <div class=" uk-light uk-cover-container">
                                         <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fjo-lanta-68KjM0kfsVo-unsplash.jpg%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=45b7a888"
-                                                width="3456" height="2304" alt="" class="uk-invisible" />
+                                                width="3456" height="2304" class="uk-invisible" />
                                         <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fjo-lanta-68KjM0kfsVo-unsplash.jpg%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=45b7a888"
-                                                width="3456" height="2304" alt="" class="uk-transition-opaque"
-                                                uk-cover="" />
+                                                width="3456" height="2304" class="uk-transition-opaque"/>
 
                                         <div class="uk-position-cover" style="background-color: rgba(0, 0, 0, 0.41)">
                                         </div>
@@ -232,7 +148,7 @@
                             /proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fnathan-dumlao-6VhPY27jdps-unsplash.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=b9115dd9 6720w
                           " sizes="(min-width: 6720px) 6720px" />
                                             <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fnathan-dumlao-6VhPY27jdps-unsplash.jpg%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=1f546ad9"
-                                                width="6720" height="4480" alt="" class="uk-invisible" />
+                                                width="6720" height="4480" class="uk-invisible" />
                                         </picture>
                                         <picture>
                                             <source type="image/webp" srcset="
@@ -244,8 +160,7 @@
                             /proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fnathan-dumlao-6VhPY27jdps-unsplash.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=b9115dd9 6720w
                           " sizes="(max-aspect-ratio: 6720/4480) 150vh" />
                                             <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fnathan-dumlao-6VhPY27jdps-unsplash.jpg%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=1f546ad9"
-                                                width="6720" height="4480" alt="" class="uk-transition-opaque"
-                                                uk-cover="" />
+                                                width="6720" height="4480" class="uk-transition-opaque"/>
                                         </picture>
 
                                         <div class="uk-position-cover" style="background-color: rgba(0, 0, 0, 0.29)">
@@ -268,8 +183,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s"
-                            uk-margin="" role="tablist">
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-visible@s" role="tablist">
                             <li uk-slider-item="0" class="uk-first-column uk-active" role="presentation">
                                 <a href="" role="tab" aria-controls="uk-slider-1" aria-label="Slide 1"
                                     aria-selected="true"></a>
@@ -293,7 +207,7 @@
             <div class="uk-container">
                 <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
                     <div class="uk-width-1-1">
-                        <blockquote uk-scrollspy-class="" class="uk-scrollspy-inview">
+                        <blockquote class="uk-scrollspy-inview">
                             <div class="w-full text-token-text-primary" dir="auto" data-testid="conversation-turn-25">
                                 <div class="px-4 py-2 justify-center text-base md:gap-6 m-auto">
                                     <div
@@ -339,7 +253,7 @@
 
         <div class="uk-section-default uk-section">
             <div class="uk-container">
-                <div class="uk-grid tm-grid-expand uk-grid-margin uk-grid-stack" uk-grid="">
+                <div class="uk-grid tm-grid-expand uk-grid-margin uk-grid-stack">
                     <div class="uk-width-1-2@m uk-first-column">
                         <h1></h1>
                         <h2><strong>Despre Timi Cafe - Inima Comunității</strong></h2>
@@ -358,7 +272,7 @@
                         <div class="uk-margin">
                             <iframe
                                 src="https://www.youtube.com/embed/h2zkV-l_TbY?v=h2zkV-l_TbY&amp;pp=ygURY29mZmVlIHNob3Agbm9pc2U%3D&amp;disablekb=1"
-                                allow="autoplay" allowfullscreen="" uk-responsive="" width="500" height="281"
+                                allow="autoplay" width="500" height="281"
                                 class="uk-responsive-width" style="aspect-ratio: 500 / 281"></iframe>
                         </div>
                     </div>
@@ -380,7 +294,7 @@
                             </p>
                         </div>
                         <div class="uk-margin uk-text-center">
-                            <div class="uk-grid uk-child-width-1-1 uk-child-width-1-3@m uk-grid-stack" uk-grid="">
+                            <div class="uk-grid uk-child-width-1-1 uk-child-width-1-3@m uk-grid-stack">
                                 <div class="uk-first-column">
                                     <div class=" uk-light uk-inline-clip uk-transition-toggle" tabindex="0">
                                         <picture>
@@ -393,7 +307,7 @@
                             /proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Frizky-subagja-1k7TnX5GAww-unsplash.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=657357f2         3235w
                           " sizes="(min-width: 3235px) 3235px" />
                                             <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Frizky-subagja-1k7TnX5GAww-unsplash.jpg%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=f31792ed"
-                                                width="3235" height="4852" alt="" loading="lazy"
+                                                width="3235" height="4852" loading="lazy"
                                                 class=" uk-transition-opaque" />
                                         </picture>
 
@@ -419,7 +333,7 @@
                             /proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fnathan-dumlao-pMW4jzELQCw-unsplash.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=de9de386 4480w
                           " sizes="(min-width: 4480px) 4480px" />
                                             <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fnathan-dumlao-pMW4jzELQCw-unsplash.jpg%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=a43eb802"
-                                                width="4480" height="6720" alt="" loading="lazy"
+                                                width="4480" height="6720" loading="lazy"
                                                 class=" uk-transition-opaque" />
                                         </picture>
 
@@ -445,7 +359,7 @@
                             /proiect-1-wd/templates/yootheme/cache/c4/toa-heftiba-QnUywvDdI1o-unsplash-c4672f31.webp                                                                                                                                 2624w
                           " sizes="(min-width: 2624px) 2624px" />
                                             <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Ftoa-heftiba-QnUywvDdI1o-unsplash.jpg%22%2C%22thumbnail%22%3A%22%2C%2C%22%7D&amp;hash=58bb4377"
-                                                width="2624" height="3936" alt="" loading="lazy"
+                                                width="2624" height="3936" loading="lazy"
                                                 class=" uk-transition-opaque" />
                                         </picture>
 
@@ -487,9 +401,9 @@
             <div class="uk-container">
                 <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
                     <div class="uk-width-1-1">
-                        <h1 uk-scrollspy-class="" style="" class="uk-scrollspy-inview"></h1>
+                        <h1 class="uk-scrollspy-inview"></h1>
                         <h2>Experiența Noastră, Savoarea Dumneavoastră</h2>
-                        <div class="uk-panel uk-margin uk-scrollspy-inview" uk-scrollspy-class="" style="">
+                        <div class="uk-panel uk-margin uk-scrollspy-inview">
                             <p>
                                 La Timi Cafe, fiecare sorbire este mai mult decât un simplu
                                 gest – este o experiență în care pasiunea se întâlnește cu
@@ -502,7 +416,7 @@
                                 zilei obișnuite.
                             </p>
                         </div>
-                        <div class="uk-margin uk-scrollspy-inview" uk-scrollspy-class="" style="">
+                        <div class="uk-margin uk-scrollspy-inview">
                             <style>
                                 #hd-664c5d8511165 .hd-image-comparison-range::-webkit-slider-thumb {
                                     height: 40px;
@@ -530,7 +444,7 @@
                           /proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fdemi-deherrera-L-sm1B4L1Ns-unsplash.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%222400%2C1602%2C%22%7D&amp;hash=7e8e6838 2400w
                         " sizes="(min-width: 1200px) 1200px" />
                                         <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Fdemi-deherrera-L-sm1B4L1Ns-unsplash.jpg%22%2C%22thumbnail%22%3A%221200%2C%2C%22%7D&amp;hash=b9d2b54a"
-                                            width="1200" height="801" class="-after" alt="" loading="lazy" />
+                                            width="1200" height="801" class="-after" loading="lazy" />
                                     </picture>
                                 </div>
                                 <div class="hd-image-comparison-before" style="height: 430px; width: 50%">
@@ -546,7 +460,7 @@
                           /proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Ftina-guina-obV_LM0KjxY-unsplash.jpg%22%2C%22type%22%3A%22webp%2C85%22%2C%22thumbnail%22%3A%222400%2C1600%2C%22%7D&amp;hash=20025cd5 2400w
                         " sizes="(min-width: 1200px) 1200px" />
                                         <img src="/proiect-1-wd/index.php/component/ajax/?p=image&amp;src=%7B%22file%22%3A%22images%2Ftina-guina-obV_LM0KjxY-unsplash.jpg%22%2C%22thumbnail%22%3A%221200%2C%2C%22%7D&amp;hash=ed015de9"
-                                            width="1200" height="800" class="-before" alt="" loading="lazy"
+                                            width="1200" height="800" class="-before" loading="lazy"
                                             style="width: 644px" />
                                     </picture>
                                 </div>
@@ -564,7 +478,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="uk-panel uk-margin uk-scrollspy-inview" uk-scrollspy-class="">
+                        <div class="uk-panel uk-margin uk-scrollspy-inview">
                             <p>
                                 Ne dedicăm nu doar la a prepara un espresso perfect sau un
                                 pour-over meticulos, ci la a crea amestecuri personalizate
@@ -575,7 +489,7 @@
                                 fiecare aromă și a vă amplifica experiența cafelei.
                             </p>
                         </div>
-                        <div class="uk-margin uk-scrollspy-inview" uk-scrollspy-class="">
+                        <div class="uk-margin uk-scrollspy-inview">
                             <a class=" uk-button uk-button-default" title="Toate produsele și serviciile"
                                 aria-label="Toate produsele și serviciile"
                                 href="/proiect-1-wd/index.php/produse-si-servicii-mobile">
@@ -594,7 +508,7 @@
                     <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
                         <div class="uk-width-1-1">
                             <div class="uk-child-width-auto uk-grid-small uk-flex-center uk-margin uk-text-center uk-countdown uk-grid uk-scrollspy-inview"
-                                uk-countdown="date: 2024-05-28" uk-grid=""
+                                uk-countdown="date: 2024-05-28"
                                 uk-scrollspy-class="uk-animation-slide-right-small" role="timer">
                                 <div class="uk-first-column">
                                     <div class="uk-countdown-number uk-countdown-days">
@@ -644,7 +558,7 @@
                             </div>
                             <div class="uk-alert uk-text-center uk-scrollspy-inview"
                                 uk-scrollspy-class="uk-animation-slide-bottom-medium">
-                                <h3 class="">
+                                <h3>
                                     🕒 Tic-tac, timpul pentru cafea se scurge... Înscrieți-vă
                                     acum!
                                 </h3>
@@ -671,7 +585,7 @@
                             <div class="uk-width-large uk-margin-auto uk-text-center">
                                 <form class="uk-form uk-panel js-form-newsletter" method="post"
                                     action="/proiect-1-wd/index.php/component/ajax/?p=theme%2Fnewsletter%2Fsubscribe&amp;hash=cb609862&amp;templateStyle=13">
-                                    <div class="uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+                                    <div class="uk-child-width-1-1 uk-grid uk-grid-stack">
                                         <div class="uk-first-column">
                                             <input class=" uk-input" type="text" name="first_name"
                                                 placeholder="Prenume" aria-label="Prenume" />
@@ -683,7 +597,7 @@
 
                                         <div class="uk-grid-margin uk-first-column">
                                             <input class=" uk-input" type="email" name="email"
-                                                placeholder="Email" aria-label="Email" required="" />
+                                                placeholder="Email" aria-label="Email" />
                                         </div>
                                         <div class="uk-grid-margin uk-first-column">
                                             <button class=" uk-button uk-button-default" type="submit">
@@ -714,7 +628,7 @@
                     <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
                         <div class="uk-width-1-1">
                             <div class="uk-child-width-auto uk-grid-small uk-flex-center uk-margin uk-text-center uk-countdown uk-grid uk-scrollspy-inview"
-                                uk-countdown="date: 2024-05-28" uk-grid=""
+                                uk-countdown="date: 2024-05-28"
                                 uk-scrollspy-class="uk-animation-slide-right-small" role="timer">
                                 <div class="uk-first-column">
                                     <div class="uk-countdown-number uk-countdown-days">
@@ -763,7 +677,7 @@
                             </div>
                             <div class="uk-alert uk-text-center uk-scrollspy-inview"
                                 uk-scrollspy-class="uk-animation-slide-bottom-medium">
-                                <h3 class="">
+                                <h3>
                                     🕒 Tic-tac, timpul pentru cafea se scurge... Înscrieți-vă
                                     acum!
                                 </h3>
@@ -790,7 +704,7 @@
                             <div class="uk-width-large uk-margin-auto uk-text-center">
                                 <form class="uk-form uk-panel js-form-newsletter" method="post"
                                     action="/proiect-1-wd/index.php/component/ajax/?p=theme%2Fnewsletter%2Fsubscribe&amp;hash=cb609862&amp;templateStyle=13">
-                                    <div class="uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+                                    <div class="uk-child-width-1-1 uk-grid uk-grid-stack">
                                         <div class="uk-first-column">
                                             <input class=" uk-input" type="text" name="first_name"
                                                 placeholder="Prenume" aria-label="Prenume" />
@@ -802,7 +716,7 @@
 
                                         <div class="uk-grid-margin uk-first-column">
                                             <input class=" uk-input" type="email" name="email"
-                                                placeholder="Email" aria-label="Email" required="" />
+                                                placeholder="Email" aria-label="Email"/>
                                         </div>
                                         <div class="uk-grid-margin uk-first-column">
                                             <button class=" uk-button uk-button-default" type="submit">
@@ -828,7 +742,7 @@
 
         <div class="uk-section-default uk-section">
             <div class="uk-container">
-                <div class="uk-grid tm-grid-expand uk-grid-margin uk-grid-stack" uk-grid="">
+                <div class="uk-grid tm-grid-expand uk-grid-margin uk-grid-stack">
                     <div class="uk-width-1-3@m uk-first-column">
                         <h1>FAQ</h1>
                         <hr />
@@ -844,12 +758,12 @@
                     </div>
                     <div class="uk-width-2-3@m uk-grid-margin uk-first-column">
                         <div uk-accordion="collapsible: true;" class="uk-accordion">
-                            <div class="">
+                            <div>
                                 <a class=" uk-accordion-title" href="" id="uk-accordion-10" role="button"
                                     aria-controls="uk-accordion-11" aria-expanded="false" aria-disabled="false">Ce
                                     tipuri de cafea oferiți?</a>
 
-                                <div class="uk-accordion-content" hidden="" id="uk-accordion-11" role="region"
+                                <div class="uk-accordion-content" id="uk-accordion-11" role="region"
                                     aria-labelledby="uk-accordion-10">
                                     <div class=" uk-panel">
                                         <p>
@@ -861,12 +775,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
+                            <div>
                                 <a class=" uk-accordion-title" href="" id="uk-accordion-12" role="button"
                                     aria-controls="uk-accordion-13" aria-expanded="false" aria-disabled="false">Aveți
                                     opțiuni pentru alternative de lapte?</a>
 
-                                <div class="uk-accordion-content" hidden="" id="uk-accordion-13" role="region"
+                                <div class="uk-accordion-content" id="uk-accordion-13" role="region"
                                     aria-labelledby="uk-accordion-12">
                                     <div class=" uk-panel">
                                         <p>
@@ -877,12 +791,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
+                            <div>
                                 <a class=" uk-accordion-title" href="" id="uk-accordion-14" role="button"
                                     aria-controls="uk-accordion-15" aria-expanded="false" aria-disabled="false">Cafeaua
                                     voastră este de comerț echitabil și organică?</a>
 
-                                <div class="uk-accordion-content" hidden="" id="uk-accordion-15" role="region"
+                                <div class="uk-accordion-content" id="uk-accordion-15" role="region"
                                     aria-labelledby="uk-accordion-14">
                                     <div class=" uk-panel">
                                         <p>
@@ -894,12 +808,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
+                            <div>
                                 <a class=" uk-accordion-title" href="" id="uk-accordion-16" role="button"
                                     aria-controls="uk-accordion-17" aria-expanded="false" aria-disabled="false">Oferiți
                                     mâncare sau doar cafea?</a>
 
-                                <div class="uk-accordion-content" hidden="" id="uk-accordion-17" role="region"
+                                <div class="uk-accordion-content" id="uk-accordion-17" role="region"
                                     aria-labelledby="uk-accordion-16">
                                     <div class=" uk-panel">
                                         <p>
@@ -910,12 +824,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
+                            <div>
                                 <a class=" uk-accordion-title" href="" id="uk-accordion-18" role="button"
                                     aria-controls="uk-accordion-19" aria-expanded="false" aria-disabled="false">Pot
                                     cumpăra boabe de cafea de la voi?</a>
 
-                                <div class="uk-accordion-content" hidden="" id="uk-accordion-19" role="region"
+                                <div class="uk-accordion-content" id="uk-accordion-19" role="region"
                                     aria-labelledby="uk-accordion-18">
                                     <div class=" uk-panel">
                                         <p>
@@ -926,12 +840,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
+                            <div>
                                 <a class=" uk-accordion-title" href="" id="uk-accordion-20" role="button"
                                     aria-controls="uk-accordion-21" aria-expanded="false" aria-disabled="false">Pot face
                                     rezervări pentru evenimente private?</a>
 
-                                <div class="uk-accordion-content" hidden="" id="uk-accordion-21" role="region"
+                                <div class="uk-accordion-content" id="uk-accordion-21" role="region"
                                     aria-labelledby="uk-accordion-20">
                                     <div class=" uk-panel">
                                         <p>
@@ -942,12 +856,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="">
+                            <div>
                                 <a class=" uk-accordion-title" href="" id="uk-accordion-22" role="button"
                                     aria-controls="uk-accordion-23" aria-expanded="false" aria-disabled="false">Aveți
                                     Wi-Fi gratuit disponibil?</a>
 
-                                <div class="uk-accordion-content" hidden="" id="uk-accordion-23" role="region"
+                                <div class="uk-accordion-content" id="uk-accordion-23" role="region"
                                     aria-labelledby="uk-accordion-22">
                                     <div class=" uk-panel">
                                         <p>
@@ -993,31 +907,8 @@
                     <div class="uk-width-1-3@m uk-first-column">
                         <div class="uk-margin">
                             <a href="index.html">
-                                <img src="img/logo-no-background.png" alt="" width="120" height="62">
+                                <img src="img/logo-no-background.png" width="120" height="62">
                             </a>
-                        </div>
-                    </div>
-                    <div class="uk-width-2-3@m uk-grid-margin uk-first-column">
-                        <div class="uk-panel uk-text-primary uk-margin">
-                            <h5>Newsletter</h5>
-                        </div>
-                        <div>
-                            <form class="uk-form uk-panel js-form-newsletter" method="post" action="">
-                                <div class="uk-grid-small uk-child-width-1-1 uk-grid uk-grid-stack">
-                                    <div class="uk-first-column">
-                                        <input class="uk-input uk-form-small" type="email" name="email"
-                                            placeholder="Email" aria-label="Email" required="" />
-                                    </div>
-                                    <div class="uk-grid-margin uk-first-column">
-                                        <button class="uk-button uk-button-default uk-button-small"
-                                            type="submit">
-                                            Abonează-te!
-                                        </button>
-                                    </div>
-                                </div>
-                                <input type="hidden" name="settings" value="" />
-                                <div class="message uk-margin uk-hidden"></div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -1054,27 +945,27 @@
                         </div>
                         <div>
                             <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
-                                <li class="">
+                                <li>
                                     <a href="index.html">
                                         Acasă
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a href="despre-noi.html">
                                         Despre noi
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a href="produse-si-servicii.html">
                                         Produse și servicii
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a href="retete.html">
                                         Rețete
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a href="contact.html">
                                         Contact
                                     </a>
@@ -1088,22 +979,22 @@
                         </div>
                         <div>
                             <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
-                                <li class="">
+                                <li>
                                     <a href="" target="_blank">
                                         Termeni și condiții
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a href="" target="_blank">
                                         Confidențialitate
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a href="" target="_blank">
                                         Cookie Policy
                                     </a>
                                 </li>
-                                <li class="">
+                                <li>
                                     <a href="https://anpc.ro/" target="_blank">
                                         ANPC
                                     </a>
@@ -1123,10 +1014,7 @@
                     </div>
                     <div class="uk-width-1-4@m">
                         <div class="uk-position-relative uk-margin uk-width-small uk-margin-auto-left">
-                            <a href="#" title="Sus" uk-totop="" uk-scroll="" class="uk-icon uk-totop" role="button" aria-label="Back to top">
-                                <svg width="18" height="10" viewBox="0 0 18 10">
-                                </svg>
-                            </a>
+                            <a href="" uk-totop></a>
                         </div>
                     </div>
                 </div>

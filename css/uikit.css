@@ -4052,11 +4052,12 @@ select.uk-form-width-xsmall {
   top: 0;
   bottom: 0;
   left: -270px;
-  /* 2 */
   box-sizing: border-box;
+  /* 2 */
   width: 270px;
   padding: 20px 20px;
-  background: #222;
+  color: #646464 !important;
+  background: #fff;
   /* 3 */
   overflow-y: auto;
 }
@@ -4151,6 +4152,12 @@ select.uk-form-width-xsmall {
   top: 5px;
   right: 5px;
   padding: 5px;
+  color: #646464 !important; 
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 /* Tablet landscape and bigger */
 @media (min-width: 640px) {
@@ -5133,11 +5140,14 @@ ul.uk-nav-sub {
  * Items
  */
 .uk-nav-default > li > a {
-  color: #999;
+  color: #646464 !important; 
+  padding: 10px 0 !important;
+  font-size: 18px !important;
+  transition: color 0.3s ease !important;
 }
 /* Hover */
 .uk-nav-default > li > a:hover {
-  color: #666;
+  color: #ebce18 !important;
 }
 /* Active */
 .uk-nav-default > li.uk-active > a {
@@ -5389,7 +5399,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f8f8f8;
+  background: #ffffff;
 }
 /* Groups
  ========================================================================== */
@@ -5456,11 +5466,43 @@ ul.uk-nav-sub {
 .uk-navbar-nav {
   display: flex;
   gap: 15px;
-  /* 1 */
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: large;
 }
+
+.uk-navbar-nav > li > a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.uk-navbar-nav > li > a:hover::after,
+.uk-navbar-nav > li.uk-active > a::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ebce18;
+  animation: underlineSlide 0.3s ease forwards;
+}
+
+@keyframes underlineSlide {
+  from {
+      width: 0;
+      margin-left: 50%;
+  }
+  to {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+
+
 /*
  * Allow items to wrap into the next line
  * Only not `absolute` positioned groups
@@ -5734,7 +5776,14 @@ ul.uk-nav-sub {
 .uk-navbar-container {
   transition: 0.1s ease-in-out;
   transition-property: background-color;
+  padding: 20px 0;
 }
+
+.uk-navbar-nav > li > a {
+  font-size: 16px; 
+  padding: 15px 20px; 
+}
+
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
   .uk-navbar-left,
@@ -8537,6 +8586,8 @@ iframe[data-uk-cover] {
   color: #333;
   /* 2 */
   text-decoration: none;
+  width: 80px;
+  height: 41px;
 }
 /* 3 */
 :where(.uk-logo) {
