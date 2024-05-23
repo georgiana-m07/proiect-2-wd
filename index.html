@@ -1,34 +1,708 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Acasă</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/uikit.css" />
-        <script src="js/uikit.js"></script>
-        <script src="js/uikit-icons.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="uk-section">
-                <div class="uk-container uk-container-expand">
-                    <h1>Title</h1>
+<html lang="en">
+<head>
+    <title>Acasă</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.css" />
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <!--DONE-->
+    <header class="uk-visible@m">
+        <div media="@m" animation="uk-animation-slide-top"  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <div class="uk-navbar-container">
+                <div class="uk-container" >
+                    <nav class="uk-navbar" uk-navbar="">
+                        <div class="uk-navbar-left">
+                            <a href="index.html" aria-label="Acasă" class="uk-logo uk-navbar-item">
+                                <img alt="Timi Cafe" loading="eager" src="img/logo-no-background.png"/>
+                            </a>
+                        </div>
+
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav">
+                                <li class="nav-item-1 uk-active">
+                                    <a href="index.html">Acasă</a>
+                                </li>
+                                <li class="nav-item-2">
+                                    <a href="despre-noi.html">Despre</a>
+                                </li>
+                                <li class="nav-item-3">
+                                    <a href="produse-si-servicii.html">Produse și servicii</a>
+                                </li>
+                                <li class="nav-item-4">
+                                    <a href="retete.html">Rețete</a>
+                                </li>
+                                <li class="nav-item-5">
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="uk-section">
-                <div class="uk-container uk-container-expand">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </header>
+
+    <!--DONE-->
+    <header class="uk-hidden@m">
+        <div class="uk-navbar-container" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a href="index.html" class="uk-logo">
+                            <img src="img/logo-no-background.png" alt="Timi Cafe">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <a uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle aria-label="Open menu"></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" title="Închidere" uk-close></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="index.html">Acasă</a></li>
+                    <li><a href="despre-noi.html">Despre noi</a></li>
+                    <li><a href="produse-si-servicii.html">Produse și servicii</a></li>
+                    <li><a href="retete.html">Rețete</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>        
+    </header>
+    
+
+    <main>
+        <!--DONE-->
+        <div class="uk-section uk-section-default uk-padding-remove-vertical">
+            <div class="uk-grid uk-child-width-1-1 uk-margin-remove-vertical">
+                <div class="uk-width-1-1">
+                    <div class="uk-section uk-cover-container">
+                        <img src="img/nathan-dumlao-6VhPY27jdps-unsplash.jpg" alt="" uk-cover>
+                        <div class="uk-container uk-position-center uk-text-center">
+                            <div class="uk-background-muted uk-padding">
+                                <h1 class="uk-animation-slide-top-medium uk-text-secondary">O cafea bună se bea la Timi Cafe!</h1>
+                                <a class="uk-button uk-button-primary" href="#sectiune-quote">Descoperă povestea noastră</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="uk-section">
-                <div class="uk-container uk-container-expand">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <!--DONE-->
+        <div class="uk-section uk-section-default uk-animation-scale-down" id="sectiune-quote">
+            <div class="uk-container">
+                <div class="uk-grid uk-child-width-1-1 uk-grid-margin">
+                    <div class="uk-width-1-1">
+                        <blockquote>
+                            <p>
+                                "În fiecare ceașcă de cafea se ascunde o
+                                poveste - de la fermierii care cultivă boabele
+                                până la arta baristului care le transformă
+                                într-o operă de artă lichidă. Înălțând vele de
+                                aromă în aerul dimineții, cafeaua este o
+                                invitație la dialog, la reflecție, la momente
+                                de pace sau la împărtășirea de idei mărețe. E
+                                un simbol al ospitalității, al inovației și,
+                                mai presus de toate, al plăcerilor simple care
+                                înnobilează cotidianul. În mijlocul
+                                zbuciumului vieții, o pauză pentru cafea este
+                                pauza pe care ne-o dăruim nouă înșine - un
+                                interludiu de calm în simfonia zilelor noastre
+                                agitate."
+                            </p>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+
+        <!--DONE-->
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <div class="uk-grid uk-grid-margin uk-grid-stack">
+                    <div class="uk-width-1-2@m uk-first-column">
+                        <h2><strong>Despre Timi Cafe - Inima Comunității</strong></h2>
+                        <div class="uk-panel uk-margin">
+                            <p>
+                                Bine ați venit la Timi Cafe, locul unde fiecare zi începe cu
+                                aroma profundă a cafelei proaspăt prăjite și cu zâmbetele
+                                calde ale oamenilor noștri. În spatele fiecărei cești, veți
+                                găsi o echipă dedicată care crede cu tărie în puterea unei
+                                cafele de calitate de a transforma momentele obișnuite în
+                                memorabile.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@m uk-first-column">
+                        <div class="">
+                            <iframe src="https://www.youtube.com/embed/h2zkV-l_TbY?v=h2zkV-l_TbY&amp;pp=ygURY29mZmVlIHNob3Agbm9pc2U%3D&amp;disablekb=1" title="Video ASMR cafenea" class="uk-responsive-width"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid uk-child-width-1-1 uk-grid-margin">
+                    <div class="uk-width-1-1">
+                        <h3>O Privire În Culise: Descoperiți Universul Timi Cafe</h3>
+                        <div class="uk-panel uk-margin">
+                            <p>
+                                La Timi Cafe, nu doar servim cafea – cultivăm relații.
+                                Cafeneaua noastră este un sanctuar urban pentru iubitorii de
+                                cafea, un spațiu unde se întâlnesc prieteni, se desfășoară
+                                întâlniri de afaceri și se nasc idei creative. Ne străduim să
+                                fim mai mult decât un simplu punct pe harta orașului; dorim să
+                                fim locul unde fiecare vizită lasă o impresie durabilă, unde
+                                comunitatea se simte acasă.
+                            </p>
+                        </div>
+                        <div class="uk-margin uk-text-center">
+                            <div class="uk-grid uk-child-width-1-1 uk-child-width-1-3@m uk-grid-stack">
+                                <div class="uk-grid-margin uk-margin-bottom">
+                                    <div class="uk-light uk-inline-clip uk-transition-toggle">
+                                        <img src="img/rizky-subagja-1k7TnX5GAww-unsplash.jpg" title="cafea" class=" uk-transition-opaque"/>
+                                        
+                                        <div class="uk-overlay-primary uk-transition-fade uk-position-cover"></div>
+
+                                        <div class="uk-position-center uk-transition-fade">
+                                            <div class="uk-overlay uk-margin-remove-first-child">
+                                                <h3 class="uk-margin-top uk-margin-remove-bottom">După-amiaza perfectă</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-grid-margin uk-margin-bottom">
+                                    <div class="uk-light uk-inline-clip uk-transition-toggle" >
+                                        <img src="img/nathan-dumlao-pMW4jzELQCw-unsplash.jpg" title="cafea" class=" uk-transition-opaque" />
+
+                                        <div class="uk-overlay-primary uk-transition-fade uk-position-cover"></div>
+
+                                        <div class="uk-position-center uk-transition-fade">
+                                            <div class="uk-overlay uk-margin-remove-first-child">
+                                                <h3 class="uk-margin-top uk-margin-remove-bottom">Cafea pentru toate gusturile</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-grid-margin uk-margin-bottom">
+                                    <div class=" uk-light uk-inline-clip uk-transition-toggle">
+                                        <img src="img/toa-heftiba-QnUywvDdI1o-unsplash.jpg" title="cafea" class=" uk-transition-opaque" />
+
+                                        <div class="uk-overlay-primary uk-transition-fade uk-position-cover"></div>
+
+                                        <div class="uk-position-center uk-transition-fade">
+                                            <div class="uk-overlay uk-margin-remove-first-child">
+                                                <h3 class=" uk-margin-top uk-margin-remove-bottom">O zi însorită la cafenea</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-panel uk-margin">
+                            <p>
+                                Ne mândrim cu sursa noastră de cafea, selectând cu atenție
+                                fiecare boabă din surse sustenabile și responsabile. Cunoaștem
+                                povestea din spatele fiecărui sortiment și vă invităm să
+                                participați la această narativă. De la espresso robust la
+                                latte-uri delicate și infuzii inovative, avem ceva pentru
+                                fiecare gust.
+                            </p>
+                        </div>
+                        <div class="uk-margin">
+                            <a class="uk-button uk-button-default" title="Citește întreaga poveste" aria-label="Citește întreaga poveste" href="despre-noi.html">Citește întreaga poveste</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--DONE-->
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <div class="uk-grid child-width-1-1 uk-grid-margin">
+                    <div class="uk-width-1-1">
+                        <h2>Experiența Noastră, Savoarea Dumneavoastră</h2>
+                        <div class="uk-panel uk-margin">
+                            <p>
+                                La Timi Cafe, fiecare sorbire este mai mult decât un simplu
+                                gest – este o experiență în care pasiunea se întâlnește cu
+                                arta. De la selecția riguroasă a boabelor până la finețea
+                                metodelor noastre artizanale de preparare, vă invităm să
+                                descoperiți profunzimea aromei pe care o aducem în fiecare
+                                ceașcă de cafea. Ne mândrim cu cafeaua de origine unică, care
+                                poartă cu ea gusturile bogate ale diferitelor colțuri ale
+                                lumii, oferindu-vă o escapadă plină de savoare în mijlocul
+                                zilei obișnuite.
+                            </p>
+                        </div>
+                        <div class="uk-margin">
+                            <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                                <li><a href="#">Înainte</a></li>
+                                <li><a href="#">După</a></li>
+                            </ul>
+                            
+                            <div class="uk-switcher uk-margin">
+                                <img src="img/tina-guina-obV_LM0KjxY-unsplash.jpg" alt="Boabe de cafea nemacinate">
+                                <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash.jpg" alt="Iced latte">
+                            </div>
+                        </div>
+                        <div class="uk-panel uk-margin">
+                            <p>
+                                Ne dedicăm nu doar la a prepara un espresso perfect sau un
+                                pour-over meticulos, ci la a crea amestecuri personalizate
+                                care echilibrează aciditatea, dulceața și notele robuste
+                                pentru a răsfăța fiecare palat. Alături de ceașca
+                                dumneavoastră preferată, găsiți gustări artizanale și
+                                deserturi de casă, selecționate cu grijă pentru a complementa
+                                fiecare aromă și a vă amplifica experiența cafelei.
+                            </p>
+                        </div>
+                        <div class="uk-margin">
+                            <a class="uk-button uk-button-default" title="Toate produsele și serviciile" aria-label="Toate produsele și serviciile" href="produse-si-servicii.html">Toate produsele și serviciile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--DONE-->
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+                    <div class="uk-width-1-1">
+                        <h1>Descoperă Aromele Noastre Unice</h1>
+                        <div class="uk-panel uk-margin uk-width-xlarge">
+                            <p>Bucurați-vă de o experiență culinară autentică cu rețetele noastre deosebite, create cu pasiune
+                                și atenție la detalii. La Timi Cafe, ne mândrim cu selecția noastră variată de rețete inovatoare
+                                și clasice, pregătite cu ingrediente proaspete și de cea mai înaltă calitate.</p>
+                            <p>Fie că vă începeți ziua cu o cafea aromatică și un croissant proaspăt, sau vă relaxați
+                                după-amiaza cu un ceai deosebit și un delicios desert, suntem aici pentru a vă oferi o
+                                experiență culinară remarcabilă.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+                    <div class="uk-width-1-1">
+                        <div class="uk-margin">
+                            <table class="uk-table uk-table-justify uk-table-divider">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h4>Latte Art</h4>
+                                        </td>
+                                        <td>
+                                            <img class="uk-align-center" src="img/cappuccino.jpg" alt="Latte Art">
+                                        </td>
+                                        <td>
+                                            <p><strong>Ingrediente:</strong></p>
+                                            <ul>
+                                                <li>30 ml Espresso proaspăt fierbinte</li>
+                                                <li>150 ml Lapte integral spumat (pana are o textură catifelată, cu spumă fină)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>Affogato</h4>
+                                        </td>
+                                        <td>
+                                            <img class="uk-align-center" src="img/affogato.png" alt="Latte Art">
+                                        </td>
+                                        <td>
+                                            <p><strong>Ingrediente:</strong></p>
+                                            <ul>
+                                                <li>1-2 cupe înghețată (vanilie sau fior di latte)</li>
+                                                <li>30 ml espresso fierbinte</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>Espresso Tonic</h4>
+                                        </td>
+                                        <td>
+                                            <img class="uk-align-center" src="img/tonic.png" alt="Latte Art">
+                                        </td>
+                                        <td>
+                                            <p><strong>Ingrediente:</strong></p>
+                                            <ul>
+                                                <li>30 ml cafea tare (rece sau fierbinte, răcită)</li>
+                                                <li>100 ml apă tonică</li>
+                                                <li>Gheață</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-margint">
+                            <a class="uk-button uk-button-default" title="Rețete" aria-label="Rețete" href="retete.html">Descoperiți toate rețetele</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--DONE-->
+        <div class="uk-section uk-section-default">
+            <div class="uk-position-relative">
+                <div class="uk-container">
+                    <div class="uk-grid uk-child-width-1-1 uk-grid-margin">
+                        <div class="uk-width-1-1">
+                            <div class="uk-child-width-auto uk-grid-small uk-flex-center uk-margin uk-text-center uk-countdown uk-grid" uk-countdown="date: 2024-06-26">
+                                <div class="uk-first-column">
+                                    <div class="uk-countdown-number uk-countdown-days">
+                                        <span>0</span><span>6</span>
+                                    </div>
+                                    <div class="uk-countdown-label uk-text-center uk-visible@s uk-margin-small">
+                                        Zile
+                                    </div>
+                                </div>
+                                <div class="uk-countdown-separator">:</div>
+                                <div>
+                                    <div class="uk-countdown-number uk-countdown-hours">
+                                        <span>1</span><span>5</span>
+                                    </div>
+                                    <div class="uk-countdown-label uk-text-center uk-visible@s uk-margin-small">
+                                        Ore
+                                    </div>
+                                </div>
+                                <div class="uk-countdown-separator">:</div>
+                                <div>
+                                    <div class="uk-countdown-number uk-countdown-minutes">
+                                        <span>0</span><span>0</span>
+                                    </div>
+                                    <div class="uk-countdown-label uk-text-center uk-visible@s uk-margin-small">
+                                        Minute
+                                    </div>
+                                </div>
+                                <div class="uk-countdown-separator">:</div>
+                                <div>
+                                    <div class="uk-countdown-number uk-countdown-seconds">
+                                        <span>5</span><span>2</span>
+                                    </div>
+                                    <div class="uk-countdown-label uk-text-center uk-visible@s uk-margin-small">
+                                        Secunde
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-alert uk-text-center uk-animation-slide-bottom-medium">
+                                <h3>🕒 Tic-tac, timpul pentru cafea se scurge... Înscrieți-vă acum!</h3>
+                            </div>
+                            <h2 class="uk-width-2xlarge uk-margin-auto uk-text-center">Profitați de ocazie!</h2>
+                            <div class="uk-panel uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                                <p>
+                                    Doar pentru scurt timp, înscrieți-vă la newsletterul nostru
+                                    și puteți câștiga o experiență exclusivă: o întâlnire la
+                                    cafea pentru doi! Lăsați-ne să fim gazdele perfecte pentru o
+                                    după-amiază de neuitat alături de persoana iubită,
+                                    înconjurată de aroma bogată a cafelei proaspăt prăjite.
+                                </p>
+                                <p>
+                                    Introduceți adresa de email în câmpul de mai jos și apăsați
+                                    butonul de abonare pentru a vă asigura că nu pierdeți
+                                    această oportunitate aromată. Ceasul ticăie, iar ultima
+                                    picătură se apropie – nu lăsați momentul să se scurgă!
+                                </p>
+                            </div>
+                            <div class="uk-width-large uk-margin-auto uk-text-center">
+                                <form class="uk-form uk-panel js-form-newsletter" method="post" action="" id="newsletterForm">
+                                    <div class="uk-child-width-1-1 uk-grid uk-grid-stack">
+                                        <div class="uk-first-column">
+                                            <input class="uk-input" type="text" name="first_name" placeholder="Prenume" aria-label="Prenume" />
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <input class="uk-input" type="text" name="last_name" placeholder="Nume" aria-label="Nume" />
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <input class="uk-input" type="email" name="email" placeholder="Email" aria-label="Email" />
+                                        </div>
+                                        <div class="uk-grid-margin uk-first-column">
+                                            <button class="uk-button uk-button-default" type="submit">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="uk-position-top-left uk-position-medium uk-margin-remove-vertical uk-visible@xl">
+                    <div class="">Grăbește-te!</div>
+                </div>
+            </div>
+        </div>
+
+        <!--DONE-->
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <div class="uk-grid uk-grid-margin uk-grid-stack">
+                    <div class="uk-width-1-3@m uk-first-column">
+                        <h1>FAQ<span uk-icon="icon: question; ratio: 2"></span></h1>
+                        <hr />
+                        <div class="uk-panel uk-margin">
+                            <p>
+                                La Timi Cafe, suntem dedicați să vă oferim nu doar o cafea
+                                excepțională, ci și o experiență memorabilă. Știm că ați putea
+                                avea întrebări și suntem aici pentru a vă oferi răspunsurile
+                                de care aveți nevoie. Iată câteva dintre cele mai frecvente
+                                întrebări pe care le primim de la clienții noștri:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="uk-width-2-3@m uk-grid-margin uk-first-column">
+                        <div uk-accordion="collapsible: true;" class="uk-accordion">
+                            <div>
+                                <a class="uk-accordion-title" href="" id="uk-accordion-10" role="button" aria-controls="uk-accordion-11" aria-expanded="false" aria-disabled="false">Ce tipuri de cafea oferiți?</a>
+                                <div class="uk-accordion-content uk-background-default uk-padding-small" id="uk-accordion-11" role="region" aria-labelledby="uk-accordion-10">
+                                    <div class="uk-panel">
+                                        <p>
+                                            Oferim o varietate largă de cafele, de la espresso
+                                            clasic la blend-uri de specialitate și cafele
+                                            single-origin. Întrebați barista noastră despre
+                                            sortimentele zilei!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="uk-accordion-title" href="" id="uk-accordion-12" role="button" aria-controls="uk-accordion-13" aria-expanded="false" aria-disabled="false">Aveți opțiuni pentru alternative de lapte?</a>
+                                <div class="uk-accordion-content uk-background-default uk-padding-small" id="uk-accordion-13" role="region" aria-labelledby="uk-accordion-12">
+                                    <div class="uk-panel">
+                                        <p>
+                                            Da, înțelegem preferințele și nevoile diverse ale
+                                            clienților noștri. Avem opțiuni de lapte de vacă, soia,
+                                            migdale, ovăz și cocos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class=" uk-accordion-title" href="" id="uk-accordion-14" role="button" aria-controls="uk-accordion-15" aria-expanded="false" aria-disabled="false">Cafeaua voastră este de comerț echitabil și organică?</a>
+                                <div class="uk-accordion-content uk-background-default uk-padding-small" id="uk-accordion-15" role="region" aria-labelledby="uk-accordion-14">
+                                    <div class="uk-panel">
+                                        <p>
+                                            Suntem mândri să spunem că majoritatea cafelelor noastre
+                                            sunt atât de comerț echitabil, cât și organice. Ne
+                                            angajăm să susținem practici durabile și etice de
+                                            procurare.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class=" uk-accordion-title" href="" id="uk-accordion-16" role="button" aria-controls="uk-accordion-17" aria-expanded="false" aria-disabled="false">Oferiți mâncare sau doar cafea?</a>
+                                <div class="uk-accordion-content uk-background-default uk-padding-small" id="uk-accordion-17" role="region" aria-labelledby="uk-accordion-16">
+                                    <div class="uk-panel">
+                                        <p>
+                                            Pe lângă cafea, avem o selecție de produse de patiserie,
+                                            sandvișuri, salate și deserturi. Toate sunt preparate
+                                            zilnic, cu ingrediente proaspete.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class=" uk-accordion-title" href="" id="uk-accordion-18" role="button" aria-controls="uk-accordion-19" aria-expanded="false" aria-disabled="false">Pot cumpăra boabe de cafea de la voi?</a>
+                                <div class="uk-accordion-content uk-background-default uk-padding-small" id="uk-accordion-19" role="region" aria-labelledby="uk-accordion-18">
+                                    <div class="uk-panel">
+                                        <p>
+                                            Desigur! Vindem boabe de cafea proaspăt prăjite pe care
+                                            le puteți savura acasă. Spuneți-ne ce preferințe aveți
+                                            și vă vom ajuta să alegeți cel mai potrivit sortiment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class=" uk-accordion-title" href="" id="uk-accordion-20" role="button" aria-controls="uk-accordion-21" aria-expanded="false" aria-disabled="false">Pot face rezervări pentru evenimente private?</a>
+                                <div class="uk-accordion-content uk-background-default uk-padding-small" id="uk-accordion-21" role="region" aria-labelledby="uk-accordion-20">
+                                    <div class="uk-panel">
+                                        <p>
+                                            Da, spațiul nostru poate fi rezervat pentru evenimente
+                                            private, întâlniri sau grupuri de studiu. Contactați-ne
+                                            pentru detalii și disponibilitate.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class=" uk-accordion-title" href="" id="uk-accordion-22" role="button" aria-controls="uk-accordion-23" aria-expanded="false" aria-disabled="false">Aveți Wi-Fi gratuit disponibil?</a>
+                                <div class="uk-accordion-content uk-background-default uk-padding-small" id="uk-accordion-23" role="region" aria-labelledby="uk-accordion-22">
+                                    <div class="uk-panel">
+                                        <p>
+                                            Da, avem Wi-Fi gratuit pentru toți clienții noștri.
+                                            Întrebați barista pentru parolă și bucurați-vă de
+                                            conexiunea noastră rapidă în timp ce savurați cafeaua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--DONE-->
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <div class="uk-margin-xlarge uk-container">
+                    <div class="uk-grid uk-flex-center uk-child-width-1-1">
+                        <div class="uk-width-1-1">
+                            <div class="uk-panel uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+                                <p>
+                                    Aveți o întrebare care nu a fost inclusă aici? Vă rugăm să
+                                    ne contactați direct și vom fi mai mult decât fericiți să vă
+                                    ajutăm. La Timi Cafe, întrebările dvs. ne inspiră să ne
+                                    îmbunătățim continuu serviciile. Așteptăm cu nerăbdare să vă
+                                    întâmpinăm!
+                                </p>
+                            </div>
+                            <div class="uk-margin uk-text-center">
+                                <a class="uk-button uk-button-default" title="Contactează-ne!" href="contact.html">Contactează-ne!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <!--DONE-->
+    <footer>
+        <div class="uk-section-secondary uk-section">
+            <div class="uk-container">
+                <div class="uk-grid uk-grid-margin uk-grid-stack">
+                    <div class="uk-width-1-3@m uk-first-column">
+                        <div class="uk-margin">
+                            <a href="index.html">
+                                <img class="uk-width-small" src="img/logo-no-background.png" alt="Logo Timi Cafe">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid uk-grid-margin">
+                    <div class="uk-width-1-2@s uk-width-1-4@m uk-first-column">
+                        <div class="uk-panel uk-text-primary uk-margin">
+                            <h5>Contactează-ne!</h5>
+                        </div>
+                        <div>
+                            <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
+                                <li>
+                                    <a class="uk-disabled"> +4078462748 </a>
+                                </li>
+                                <li>
+                                    <a class="uk-disabled">
+                                        <joomla-hidden-mail is-link="1" is-email="1" first="aGVsbG8="
+                                            last="dGltaWNhZmUucm8=" text="aGVsbG9AdGltaWNhZmUucm8="
+                                            base="/proiect-1-wd"><a href="mailto:hello@timicafe.ro"
+                                                base="/proiect-1-wd">hello@timicafe.ro</a></joomla-hidden-mail>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47455d84610655bf:0xfd169ff24d29f192?sa=X&amp;ved=1t:8290&amp;ictx=111">
+                                        Bulevardul Vasile Pârvan 4, Timișoara 300223
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s uk-width-1-4@m">
+                        <div class="uk-panel uk-text-primary uk-margin">
+                            <h5>Timi Cafe</h5>
+                        </div>
+                        <div>
+                            <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
+                                <li>
+                                    <a href="index.html">
+                                        Acasă
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="despre-noi.html">
+                                        Despre noi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="produse-si-servicii.html">
+                                        Produse și servicii
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="retete.html">
+                                        Rețete
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s uk-width-1-4@m uk-first-column">
+                        <div class="uk-panel uk-text-primary uk-margin">
+                            <h5>Legal</h5>
+                        </div>
+                        <div>
+                            <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        Termeni și condiții
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        Confidențialitate
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        Cookie Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer">
+                                        ANPC
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage" target="_blank" rel="noopener noreferrer">
+                                        SOL
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid uk-grid-margin uk-grid-stack">
+                    <div class="uk-width-3-4@m uk-first-column">
+                        <div class="uk-panel uk-text-meta uk-margin">
+                            <p>Copyright © 2024 Timi Cafe. Toate drepturile rezervate</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-4@m">
+                        <div class="uk-position-relative uk-margin uk-width-small uk-margin-auto-left">
+                            <a href="" title="To the top" uk-totop></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
 </html>

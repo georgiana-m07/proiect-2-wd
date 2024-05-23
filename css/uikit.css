@@ -2,14 +2,19 @@
 /* ========================================================================
    Component: Base
  ========================================================================== */
-/*
+
+
+/*Import Google Fonts*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+ /*
  * 1. Set `font-size` to support `rem` units
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  * 3. Style
  */
 html {
   /* 1 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
@@ -174,6 +179,8 @@ img:not([src]) {
  */
 iframe {
   border: 0;
+  width: 100%;
+  height: 100%;
 }
 /* Block elements
  ========================================================================== */
@@ -222,7 +229,7 @@ h6,
 .uk-heading-2xlarge,
 .uk-heading-3xlarge {
   margin: 0 0 20px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Montserrat', "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   color: #333;
   text-transform: none;
@@ -924,6 +931,12 @@ a.uk-link-reset,
   /* 3 */
   margin-bottom: 20px;
 }
+
+.uk-table img {
+  width: 250px;
+  height: 250px;
+}
+
 /* Add margin if adjacent element */
 * + .uk-table {
   margin-top: 20px;
@@ -1111,7 +1124,7 @@ a.uk-link-reset,
  */
 .uk-icon {
   /* 1 */
-  margin: 0;
+  margin: 1.25rem;
   /* 2 */
   border: none;
   /* 3 */
@@ -1346,7 +1359,7 @@ button.uk-icon:not(:disabled) {
   /* 2 */
   margin: 0;
   /* 3 */
-  border-radius: 0;
+  border-radius: 5px;
   /* 4 */
   font: inherit;
 }
@@ -1378,6 +1391,7 @@ button.uk-icon:not(:disabled) {
  */
 .uk-textarea {
   overflow: auto;
+  min-height: 200px;
 }
 /*
  * Remove the inner padding and cancel buttons in Chrome on OS X and Safari on OS X.
@@ -1927,13 +1941,13 @@ select.uk-form-width-xsmall {
   text-transform: none;
   /* 6 */
   -webkit-appearance: none;
-  border-radius: 0;
+  border-radius: 10px;
   /* 7 */
   display: inline-block;
   box-sizing: border-box;
   padding: 0 30px;
   vertical-align: middle;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   /* 8 */
   line-height: 38px;
   /* 9 */
@@ -1967,14 +1981,14 @@ select.uk-form-width-xsmall {
  */
 .uk-button-default {
   background-color: transparent;
-  color: #333;
-  border: 1px solid #e5e5e5;
+  color: #4e4b48;
+  border: 1px solid #ebce18;
 }
 /* Hover */
 .uk-button-default:hover {
-  background-color: transparent;
-  color: #333;
-  border-color: #b2b2b2;
+  background-color: #ebce18;
+  color: #4e4b48;
+  border-color: #ebce18;
 }
 /* OnClick + Active */
 .uk-button-default:active,
@@ -1987,14 +2001,15 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #1e87f0;
+  background-color: transparent;
   color: #fff;
-  border: 1px solid transparent;
+  border: 1px solid #fff;
 }
 /* Hover */
 .uk-button-primary:hover {
-  background-color: #0f7ae5;
-  color: #fff;
+  background-color: #fff;
+  color: #646464;
+  border: 1px solid #fff;
 }
 /* OnClick + Active */
 .uk-button-primary:active,
@@ -2928,8 +2943,9 @@ select.uk-form-width-xsmall {
   position: relative;
   margin-bottom: 20px;
   padding: 15px 29px 15px 15px;
-  background: #f8f8f8;
-  color: #666;
+  background: #ebce18;
+  color: #000;
+  border-radius: 10px;
 }
 /* Add margin if adjacent element */
 * + .uk-alert {
@@ -4052,11 +4068,12 @@ select.uk-form-width-xsmall {
   top: 0;
   bottom: 0;
   left: -270px;
-  /* 2 */
   box-sizing: border-box;
+  /* 2 */
   width: 270px;
   padding: 20px 20px;
-  background: #222;
+  color: #646464 !important;
+  background: #fff;
   /* 3 */
   overflow-y: auto;
 }
@@ -4151,6 +4168,12 @@ select.uk-form-width-xsmall {
   top: 5px;
   right: 5px;
   padding: 5px;
+  color: #646464 !important; 
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 /* Tablet landscape and bigger */
 @media (min-width: 640px) {
@@ -5133,11 +5156,14 @@ ul.uk-nav-sub {
  * Items
  */
 .uk-nav-default > li > a {
-  color: #999;
+  color: #646464 !important; 
+  padding: 10px 0 !important;
+  font-size: 18px !important;
+  transition: color 0.3s ease !important;
 }
 /* Hover */
 .uk-nav-default > li > a:hover {
-  color: #666;
+  color: #ebce18 !important;
 }
 /* Active */
 .uk-nav-default > li.uk-active > a {
@@ -5389,7 +5415,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f8f8f8;
+  background: #ffffff;
 }
 /* Groups
  ========================================================================== */
@@ -5456,11 +5482,43 @@ ul.uk-nav-sub {
 .uk-navbar-nav {
   display: flex;
   gap: 15px;
-  /* 1 */
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: large;
 }
+
+.uk-navbar-nav > li > a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.uk-navbar-nav > li > a:hover::after,
+.uk-navbar-nav > li.uk-active > a::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ebce18;
+  animation: underlineSlide 0.3s ease forwards;
+}
+
+@keyframes underlineSlide {
+  from {
+      width: 0;
+      margin-left: 50%;
+  }
+  to {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+
+
 /*
  * Allow items to wrap into the next line
  * Only not `absolute` positioned groups
@@ -5492,7 +5550,8 @@ ul.uk-nav-sub {
   min-height: 80px;
   /* 4 */
   font-size: 0.875rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-family: 'Montserrat', "Helvetica Neue", Arial, sans-serif;
   /* 5 */
   text-decoration: none;
 }
@@ -5734,7 +5793,14 @@ ul.uk-nav-sub {
 .uk-navbar-container {
   transition: 0.1s ease-in-out;
   transition-property: background-color;
+  padding: 20px 0;
 }
+
+.uk-navbar-nav > li > a {
+  font-size: 16px; 
+  padding: 15px 20px; 
+}
+
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
   .uk-navbar-left,
@@ -5869,8 +5935,8 @@ ul.uk-nav-sub {
 }
 /* Active */
 .uk-subnav-pill > .uk-active > a {
-  background-color: #1e87f0;
-  color: #fff;
+  background-color: #ebce18;
+  color: #000;
 }
 /* Disabled
  * The same for all style modifiers
@@ -6531,6 +6597,7 @@ ul.uk-nav-sub {
 }
 .uk-animation-scale-down {
   animation-name: uk-fade, uk-scale-down;
+  animation-delay: 2s;
 }
 /*
  * Slide
@@ -6567,6 +6634,7 @@ ul.uk-nav-sub {
  */
 .uk-animation-slide-top-medium {
   animation-name: uk-fade, uk-slide-top-medium;
+  animation-delay: 0.3s;
 }
 .uk-animation-slide-bottom-medium {
   animation-name: uk-fade, uk-slide-bottom-medium;
@@ -7584,7 +7652,7 @@ ul.uk-nav-sub {
   color: #1e87f0 !important;
 }
 .uk-text-secondary {
-  color: #222 !important;
+  color: #ebebee !important;
 }
 .uk-text-success {
   color: #32d296 !important;
@@ -7910,6 +7978,8 @@ iframe[data-uk-cover] {
   overflow: hidden;
   /* 2 */
   position: relative;
+  height: 100vh;
+  color: #fff !important;
 }
 /* ========================================================================
    Component: Background
@@ -7917,10 +7987,12 @@ iframe[data-uk-cover] {
 /* Color
  ========================================================================== */
 .uk-background-default {
-  background-color: #fff;
+  background-color: #ebce18;
 }
 .uk-background-muted {
-  background-color: #f8f8f8;
+  color: #ebebeb !important;
+  backdrop-filter: blur(1rem);
+  border-radius: 10px;
 }
 .uk-background-primary {
   background-color: #1e87f0;
@@ -8199,6 +8271,7 @@ iframe[data-uk-cover] {
   display: flow-root;
   position: relative;
   box-sizing: border-box;
+  color: #000;
 }
 /*
  * Remove margin from the last-child
@@ -8537,6 +8610,8 @@ iframe[data-uk-cover] {
   color: #333;
   /* 2 */
   text-decoration: none;
+  width: 80px;
+  height: 41px;
 }
 /* 3 */
 :where(.uk-logo) {
