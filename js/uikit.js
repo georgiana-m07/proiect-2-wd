@@ -9873,12 +9873,23 @@
 }));
 
 document.addEventListener('DOMContentLoaded', function() {
-  var newsletterForm = document.getElementById('newsletterForm');
-  if (newsletterForm) {
-      newsletterForm.addEventListener('submit', function(event) {
-          event.preventDefault(); // Previne trimiterea formularului
-          alert('Mulțumim pentru subscriere!'); // Afișează un mesaj de mulțumire
-          this.submit(); // Optional: Trimite formularul după afișarea alertei, dacă este necesar să continue trimiterea la server
-      });
-  }
+    var newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(event) {
+            // Verifică dacă toate câmpurile necesare sunt completate
+            var isValid = true;
+            this.querySelectorAll('[required]').forEach(function(input) {
+                if (!input.value.trim()) {
+                    isValid = false;
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault(); // Oprire trimiterea formularului
+                alert('Te rugăm să completezi toate câmpurile necesare.');
+            } else {
+                alert('Mulțumim pentru subscriere!'); // Afișează un mesaj de mulțumire
+            }
+        });
+    }
 });
