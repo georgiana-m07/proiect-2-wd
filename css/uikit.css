@@ -929,6 +929,12 @@ a.uk-link-reset,
   /* 3 */
   margin-bottom: 20px;
 }
+
+.uk-table img {
+  width: 250px;
+  height: 250px;
+}
+
 /* Add margin if adjacent element */
 * + .uk-table {
   margin-top: 20px;
@@ -1351,7 +1357,7 @@ button.uk-icon:not(:disabled) {
   /* 2 */
   margin: 0;
   /* 3 */
-  border-radius: 0;
+  border-radius: 5px;
   /* 4 */
   font: inherit;
 }
@@ -1383,6 +1389,7 @@ button.uk-icon:not(:disabled) {
  */
 .uk-textarea {
   overflow: auto;
+  min-height: 200px;
 }
 /*
  * Remove the inner padding and cancel buttons in Chrome on OS X and Safari on OS X.
@@ -1938,7 +1945,7 @@ select.uk-form-width-xsmall {
   box-sizing: border-box;
   padding: 0 30px;
   vertical-align: middle;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   /* 8 */
   line-height: 38px;
   /* 9 */
@@ -1972,14 +1979,14 @@ select.uk-form-width-xsmall {
  */
 .uk-button-default {
   background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #4e4b48;
+  border: 1px solid #ebce18;
 }
 /* Hover */
 .uk-button-default:hover {
-  background-color: #fff;
-  color: #646464;
-  border-color: #fff;
+  background-color: #ebce18;
+  color: #4e4b48;
+  border-color: #ebce18;
 }
 /* OnClick + Active */
 .uk-button-default:active,
@@ -1992,14 +1999,15 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #1e87f0;
+  background-color: transparent;
   color: #fff;
-  border: 1px solid transparent;
+  border: 1px solid #fff;
 }
 /* Hover */
 .uk-button-primary:hover {
-  background-color: #0f7ae5;
-  color: #fff;
+  background-color: #fff;
+  color: #646464;
+  border: 1px solid #fff;
 }
 /* OnClick + Active */
 .uk-button-primary:active,
@@ -2933,8 +2941,9 @@ select.uk-form-width-xsmall {
   position: relative;
   margin-bottom: 20px;
   padding: 15px 29px 15px 15px;
-  background: #f8f8f8;
-  color: #666;
+  background: #ebce18;
+  color: #000;
+  border-radius: 10px;
 }
 /* Add margin if adjacent element */
 * + .uk-alert {
@@ -5924,8 +5933,8 @@ ul.uk-nav-sub {
 }
 /* Active */
 .uk-subnav-pill > .uk-active > a {
-  background-color: #1e87f0;
-  color: #fff;
+  background-color: #ebce18;
+  color: #000;
 }
 /* Disabled
  * The same for all style modifiers
@@ -6586,6 +6595,7 @@ ul.uk-nav-sub {
 }
 .uk-animation-scale-down {
   animation-name: uk-fade, uk-scale-down;
+  animation-delay: 2s;
 }
 /*
  * Slide
@@ -6622,6 +6632,7 @@ ul.uk-nav-sub {
  */
 .uk-animation-slide-top-medium {
   animation-name: uk-fade, uk-slide-top-medium;
+  animation-delay: 0.3s;
 }
 .uk-animation-slide-bottom-medium {
   animation-name: uk-fade, uk-slide-bottom-medium;
@@ -7639,7 +7650,7 @@ ul.uk-nav-sub {
   color: #1e87f0 !important;
 }
 .uk-text-secondary {
-  color: #222 !important;
+  color: #ebebee !important;
 }
 .uk-text-success {
   color: #32d296 !important;
@@ -7965,6 +7976,8 @@ iframe[data-uk-cover] {
   overflow: hidden;
   /* 2 */
   position: relative;
+  height: 100vh;
+  color: #fff !important;
 }
 /* ========================================================================
    Component: Background
@@ -7972,10 +7985,12 @@ iframe[data-uk-cover] {
 /* Color
  ========================================================================== */
 .uk-background-default {
-  background-color: #fff;
+  background-color: #ebce18;
 }
 .uk-background-muted {
-  background-color: #f8f8f8;
+  color: #ebebeb !important;
+  backdrop-filter: blur(1rem);
+  border-radius: 10px;
 }
 .uk-background-primary {
   background-color: #1e87f0;
@@ -8254,6 +8269,7 @@ iframe[data-uk-cover] {
   display: flow-root;
   position: relative;
   box-sizing: border-box;
+  color: #000;
 }
 /*
  * Remove margin from the last-child

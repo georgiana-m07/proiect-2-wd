@@ -9871,3 +9871,14 @@
     return App;
 
 }));
+
+document.addEventListener('DOMContentLoaded', function() {
+  var newsletterForm = document.getElementById('newsletterForm');
+  if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Previne trimiterea formularului
+          alert('Mulțumim pentru subscriere!'); // Afișează un mesaj de mulțumire
+          this.submit(); // Optional: Trimite formularul după afișarea alertei, dacă este necesar să continue trimiterea la server
+      });
+  }
+});
