@@ -1932,7 +1932,7 @@ select.uk-form-width-xsmall {
   text-transform: none;
   /* 6 */
   -webkit-appearance: none;
-  border-radius: 0;
+  border-radius: 10px;
   /* 7 */
   display: inline-block;
   box-sizing: border-box;
@@ -1972,14 +1972,14 @@ select.uk-form-width-xsmall {
  */
 .uk-button-default {
   background-color: transparent;
-  color: #333;
-  border: 1px solid #e5e5e5;
+  color: #fff;
+  border: 1px solid #fff;
 }
 /* Hover */
 .uk-button-default:hover {
-  background-color: transparent;
-  color: #333;
-  border-color: #b2b2b2;
+  background-color: #fff;
+  color: #646464;
+  border-color: #fff;
 }
 /* OnClick + Active */
 .uk-button-default:active,
