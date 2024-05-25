@@ -77,7 +77,7 @@
     </header>
 
     <main>
-        <div class="uk-section uk-section-default">
+        <section class="uk-section uk-section-default">
             <div class="uk-container">
                 <h1>Mulțumim pentru mesaj!</h1>
                 <p>Ne-ați oferit următoarele date:</p>
@@ -105,17 +105,17 @@
                 ?>
 
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <div class="uk-section uk-section-secondary">
+        <section class="uk-section uk-section-default">
             <div class="uk-container">
                 <div class="uk-grid uk-grid-margin uk-grid-stack">
                     <div class="uk-width-1-3@m uk-first-column">
                         <div class="uk-margin">
                             <a href="index.html">
-                                <img src="img/logo-no-background.png" width="120" height="62">
+                                <img class="uk-width-small" src="img/logo-no-background.png" alt="Logo Timi Cafe">
                             </a>
                         </div>
                     </div>
@@ -188,27 +188,29 @@
                         <div>
                             <ul class="uk-margin-remove-bottom uk-nav uk-nav-default">
                                 <li>
-                                    <a href="" target="_blank">
+                                    <a href="" target="_blank" rel="noopener noreferrer">
                                         Termeni și condiții
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" target="_blank">
+                                    <a href="" target="_blank" rel="noopener noreferrer">
                                         Confidențialitate
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" target="_blank">
+                                    <a href="" target="_blank" rel="noopener noreferrer">
                                         Cookie Policy
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://anpc.ro/" target="_blank">
+                                    <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer">
                                         ANPC
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage" target="_blank">SOL</a>
+                                    <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage" target="_blank" rel="noopener noreferrer">
+                                        SOL
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -222,11 +224,12 @@
                     </div>
                     <div class="uk-width-1-4@m">
                         <div class="uk-position-relative uk-margin uk-width-small uk-margin-auto-left">
-                            <a href="" uk-totop></a>
+                            <a href="" title="To the top" uk-totop></a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
     </footer>
 </body>
 </html>
