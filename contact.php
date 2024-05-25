@@ -10,6 +10,7 @@
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
+    <!--HEADER desktop-->
     <header class="uk-visible@m">
         <div media="@m" animation="uk-animation-slide-top"  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <div class="uk-navbar-container">
@@ -46,6 +47,7 @@
         </div>
     </header>
 
+    <!--HEADER mobile-->
     <header class="uk-hidden@m">
         <div class="uk-navbar-container" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <div class="uk-container uk-container-expand">
@@ -76,8 +78,9 @@
         </div>        
     </header>
 
+    <!--MAIN-->
     <main>
-        <section class="uk-section uk-section-default">
+        <section id="contact-mesaj" class="uk-section uk-section-default">
             <div class="uk-container">
                 <h1>Mulțumim pentru mesaj!</h1>
                 <p>Ne-ați oferit următoarele date:</p>
@@ -103,11 +106,11 @@
                     echo "<h2>Mesaj:</h2><p>$mesaj</p>";
                 }
                 ?>
-
             </div>
         </section>
     </main>
 
+    <!--FOOTER-->
     <footer>
         <section class="uk-section uk-section-default">
             <div class="uk-container">
