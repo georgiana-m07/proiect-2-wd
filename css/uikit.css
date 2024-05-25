@@ -1043,6 +1043,12 @@ a.uk-link-reset,
 .uk-table-shrink {
   width: 1px;
 }
+
+.uk-table-shrink img {
+  width: 150px !important;
+  height: 50px !important;
+}
+
 .uk-table-expand {
   min-width: 150px;
 }
