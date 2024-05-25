@@ -112,7 +112,7 @@
 
     <!--FOOTER-->
     <footer>
-        <section class="uk-section uk-section-default">
+        <section class="uk-section uk-section-secondary">
             <div class="uk-container">
                 <div class="uk-grid uk-grid-margin uk-grid-stack">
                     <div class="uk-width-1-3@m uk-first-column">
