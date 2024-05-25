@@ -3886,6 +3886,11 @@ select.uk-form-width-xsmall {
   -webkit-touch-callout: none;
   /* 5 */
   touch-action: pan-y;
+  aspect-ratio: 16 / 9; 
+  min-height: 300px; 
+  min-width: 100%; 
+  max-width: 100%;
+  transform: translate3d(0px, 0px, 0px);
 }
 /* Item
  ========================================================================== */
@@ -8272,6 +8277,7 @@ iframe[data-uk-cover] {
   position: relative;
   box-sizing: border-box;
   color: #000;
+  
 }
 /*
  * Remove margin from the last-child
